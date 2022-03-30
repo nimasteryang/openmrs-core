@@ -1035,13 +1035,13 @@
 				</dependency>
 			</dependencies>
 		</profile>
-		<profile>
+<!-- 		<profile>
 			<id>sonar-cloud</id>
 			<properties>
 				<sonar.organization>openmrs</sonar.organization>
 				<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 			</properties>
-		</profile>
+		</profile> -->
 	</profiles>
 
 	<reporting>
@@ -1099,6 +1099,8 @@
 	</distributionManagement>
 
 	<properties>
+		<sonar.organization>nimasteryang</sonar.organization>
+  		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<javaCompilerVersion>1.8</javaCompilerVersion>
 		<maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
@@ -1130,11 +1132,11 @@
 
 		<customArgLineForTesting />
 
-		<sonar.host.url>https://sonar.openmrs.org</sonar.host.url>		
+<!-- 		<sonar.host.url>https://sonar.openmrs.org</sonar.host.url>		
 		<sonar.issuesReport.html.enable>true</sonar.issuesReport.html.enable>
 		<sonar.issuesReport.lightModeOnly>true</sonar.issuesReport.lightModeOnly>
 		<sonar.issuesReport.console.enable>true</sonar.issuesReport.console.enable>
-		<sonar.analysis.mode>publish</sonar.analysis.mode>
+		<sonar.analysis.mode>publish</sonar.analysis.mode> -->
 
 		<argLine>-Duser.language=en -Duser.region=US -Xmx1g ${customArgLineForTesting} -Djava.locale.providers=COMPAT</argLine>
 	</properties>
